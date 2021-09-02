@@ -49,6 +49,7 @@ public class Car implements Runnable {
                     lock.lock();
                     System.out.println(this.name + " WIN");
                     MainClass.cdlFinish.countDown();
+                    lock.unlock();
                 } else {
                     System.out.println(this.name + " закончил гонку.");
                     MainClass.cdlFinish.countDown();
