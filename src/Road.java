@@ -3,6 +3,7 @@ public class Road extends Stage {
         this.length = length;
         this.description = "Дорога " + length + " метров";
     }
+
     @Override
     public void go(Car c) {
         try {
